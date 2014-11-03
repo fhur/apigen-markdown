@@ -17,5 +17,3 @@ class MarkdownGenerator < Generator
 
 end
 
-puts MarkdownGenerator.new.get_template
-
