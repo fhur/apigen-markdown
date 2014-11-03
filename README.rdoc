@@ -1,9 +1,28 @@
 = apigen-markdown
 
-Description goes here.
+Test `apigen` generator that produces mardown oputput.
+
+== Usage
+
+Simply add the generator to your `apigen.json` as follows:
+
+```json
+  {
+    "require": "apigen-markdown"
+    "out": "~/you/out/path/users_api.md",
+    "opts" : {
+      "name":"the name",
+      "description": "enter a description"
+    }
+  }
+
+```
+
+You must specify 2 options in the `opts` object: the name and description of the generated api file.
+
 
 == Contributing to apigen-markdown
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
 * Fork the project.
