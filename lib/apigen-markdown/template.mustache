@@ -5,6 +5,21 @@
 ### Endpoints
 
 {{#endpoints}}
-  {{name}}
+  #### Endpoint {{name}}
+  URL: {{method.name}} {{url}}
+  ##### Path Params
+  {{#path_params_list}}
+  - [`{{type}}`] `{{name}}`
+  {{/path_params_list}}
+  ##### Query Params
+  {{#query_params_list}}
+  - [`{{type}}`] `{{name}}`
+  {{/query_params_list}}
+  ##### Headers
+  {{#headers_list}}
+  - `{{name}}`: `{{value}}`
+  {{/headers_list}}
+
+
 {{/endpoints}}
 
